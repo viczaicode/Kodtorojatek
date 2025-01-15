@@ -8,15 +8,9 @@ nyert = False
 
 while not jatek.jatek_vege():
     print(f"\n{jatek.probalkozasok_szama + 1}. próbálkozás:")
-    
-
     tipp = jatek.tipp_bekeres()
-    
-
     fekete, feher = jatek.tipp_ellenorzese(tipp)
     print(f"Eredmény: {fekete} fekete, {feher} fehér")
-    
-
     if fekete == 4:
         print("\nGratulálok! Nyertél!")
         nyert = True

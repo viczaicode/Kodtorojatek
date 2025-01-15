@@ -7,12 +7,10 @@ class Szinek:
     def random_szinek(self):
         titkos = []
         lehetseges_szinek = self.szinek.copy() 
-        
-        for _ in range(4):
+        for i in range(4):
             szin = random.choice(lehetseges_szinek)
             titkos.append(szin)
             lehetseges_szinek.remove(szin)
-            
         return titkos
     
     def szin_ellenorzes(self, szin):
